@@ -1,0 +1,405 @@
+
+
+@keyframes logo {
+   0% {
+      opacity: 0;
+      transform:  translatey(-1em);
+   }
+   100% {
+      opacity: 1;
+      transform: translatey(0);
+   }
+}
+@keyframes words {
+   0% {
+      opacity: 0;
+      transform: translateX(1em);
+   }
+    50% {
+      opacity: .5;
+      transform: translateY(.1em);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+}
+
+}
+img {
+  max-width:100%;
+  margin-top:16px;
+}
+#djpic2{
+  margin-left: auto;
+  margin-right: auto;
+}
+header{
+  grid-area:header;
+  text-align:center;
+}
+header h1 {
+  animation:words 2.5s;
+}
+.headerwrapper{
+ display:grid;
+ justify-items:center;
+ align-items:center;
+ grid-template-columns:25% auto;
+ grid-template-areas:
+  "headerpic headertext";
+  background:#d4de56;
+}
+
+.headertext{
+grid-area:headertext;
+  text-align:center;
+  color:black;
+}
+.headerpic{
+grid-area:headerpic;
+  padding:5px;
+  height:10vmax;
+  animation:logo .5s;
+}
+nav {
+    grid-area:nav;
+    background:#226324;
+    background:#729a30;
+    padding:1em;
+}
+main {
+    grid-area:main;
+    background:black;
+    color:white;
+    padding:5px;
+    }
+  main p {
+    color:white;
+    padding:1% 2%;
+    font-size:1em;
+}
+main h1 {
+  color:#729a30;
+}
+main h2{
+  color:white;
+}
+
+footer {
+  grid-area:footer;
+    background:#4562a7;
+    padding:5px;
+    text-align:center;
+    }
+
+.homec{
+  grid-area:homec;
+  font-size:2em;
+}
+.sound1 {
+  grid-area:sound1;
+}
+.sound2 {
+  grid-area:sound2;
+}
+.video1 {
+  grid-area:video1;
+}
+.video2 {
+  grid-area:video2;
+}
+audio {
+  max-width:100%;
+}
+video {
+width:480px;
+max-width:100%;
+max-height:350px;
+}
+
+ video[poster]{
+object-fit:cover;
+}
+.homepic1 {
+  grid-area:homepic1;
+}
+.homepic2 {
+  grid-area:homepic2;
+}
+.homepic3 {
+  grid-area:homepic3;
+}
+.homed {
+  grid-area:homed;
+}
+.homee {
+  grid-area:homee;
+}
+.homef {
+  grid-area:homef;
+}
+figure {
+  margin:0;
+}
+.blockb {
+  grid-area:blockb;
+}
+.blockc {
+  grid-area:blockc;
+}
+.blockd {
+  grid-area:blockd;
+}
+.blocke {
+  grid-area:blocke;
+}
+.img1 {
+  grid-area:img1;
+}
+.img2 {
+  grid-area:img2;
+  max-width:95%;
+}
+#schoolpic {
+  width:600px;
+}
+.img3 {
+  grid-area:img3;
+}
+.blockf{
+  grid-area:blockf;
+}
+.blockg{
+  grid-area:blockg;
+}
+.blockh{
+  grid-area:blockh;
+}
+
+.img4{
+  grid-area:img4;
+}
+.blockh{
+  grid-area:blockh;
+}
+.img5{
+  grid-area:img5;
+}
+#review {
+  background-color:#729a30;
+  margin-bottom:.5em;
+}
+figure img {
+  transition: all .5s ease-in-out;
+}
+figure img:hover {
+  transform: scale(1.1);
+}
+/*----------Mobile Layout----------------------------*/
+.container1 { /*for later*/
+  display:grid;
+  grid-gap:.5em;
+  grid-template-columns:auto 1fr;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+    }
+
+
+  .nestedgrid3{
+    display:grid;
+    align-items:center;
+    justify-items:center;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "blockb"
+    "img1"
+    "blockc"
+    "img2"
+    "blockd"
+    "img3"
+    "blocke";
+  }
+.nestedgrid4{
+  display:grid;
+  align-items:center;
+  justify-items:center;
+  grid-template-columns:1fr 1fr;
+  grid-gap:1em;
+  grid-template-areas:
+  "blockc"
+  "blockd"
+  "img1"
+  "blocke"
+  "img2"
+  "blockf"
+  "img3"
+  "blockg"
+  "img4"
+  "blockh"
+  "img5";
+}
+
+
+
+
+/*This stuff is for the hamburger menu*/
+.toggleNav {
+    display:grid; /*This is what allows the hamburger icon and "Menu" to display*/
+    text-align:center;
+    font-size:5vw;
+    font-weight:bold;
+
+
+    padding:10px;
+    }
+
+#flex-nav ul {
+    display: none; /*jQuery toggles the nav from to this class to the .open when clicked*/
+    text-align:center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+ 
+#flex-nav ul.open { /*.open is the class that gets toggled when clicked (with help from the jQuery code)*/
+    display:grid;
+    }
+    
+#flex-nav li {
+    font-size:5vw;
+    padding-left:10px;
+    padding-top:10px;
+    }
+#flex-nav ul {
+    text-align:center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+/*-----------------------Tablet Media Query------------------------*/
+@media only screen and (min-width: 480px)  {
+.container1 { /*for later*/
+  display:grid;
+  grid-gap:.5em;
+  grid-template-columns:auto 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+    }
+
+.nestedgrid{
+  display:grid;
+  text-align:center;
+  grid-template-columns:1fr 1fr;
+  grid-template-areas:
+  "homec sound1"
+  "homec sound2"
+  "video1 video2"
+  "homepic1 homed"
+  "homepic2 homee"
+  "homepic3 homef";
+}
+
+  .nestedgrid3{
+    display:grid;
+    align-items:center;
+    justify-items:center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "blockb blockb"
+    "img1 img2"
+    "blockc blockd"
+    "img3 img3"
+    "blocke blocke";
+  }
+
+/* Below will change from hamburger menu to side navigation*/
+  
+.toggleNav {
+    display: none; /*Makes the hamburger icon with the word "Menu" to disappear at this screen size*/
+  }
+  
+#flex-nav ul {
+    display:grid;
+    text-align:left;
+  }
+
+#flex-nav li {
+    padding-left:10px;
+    padding-top:10px;
+    font-size:3vw;
+  }
+
+}
+/*-----------------------Desktop Media Query------------------------*/
+@media only screen and (min-width: 960px)  {
+
+.container1 { /*for later*/
+  display:grid;
+  grid-gap:.5em;
+  grid-template-columns:auto 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+    }
+    
+.nestedgrid{
+  display:grid;
+  text-align:center;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-areas:
+  "homec sound1 sound2"
+  "homec video1 video2"
+  "homepic1 homepic2 homepic3"
+  "homed homee homef";
+}
+.nestedgrid2{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-areas:
+  "div1 div2";
+  }
+  .nestedgrid3{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "blockb blockb blockb"
+    "img1 img2 img3"
+    "blockc blockd blocke";
+  }
+
+.nestedgrid4{
+  display:grid;
+  align-items:center;
+  justify-items:center;
+  grid-template-columns:1fr 1fr;
+  grid-gap:1em;
+  grid-template-areas:
+  "blockc blockc"
+  "blockd blocke"
+  "img1 img2"
+  "blockf blockg"
+  "img3 img4"
+  "blockh img5";
+}
+
+.nestedgrid5{
+  display:grid;
+  align-items:center;
+  grid-template-areas:
+  "blockb"
+  "blockc"
+  "blockd"
+  "blocke"
+  "blockf"
+  "blockg"
+  "blockh"
+}
+}
+  
