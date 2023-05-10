@@ -80,16 +80,15 @@ main {
     padding:1% 2%;
     font-size:1em;
 }
-main a {
-  color:#9E9EFF;
-}
 main h1 {
   color:#729a30;
 }
 main h2{
   color:white;
 }
-
+main a {
+  color:#9E9EFF;
+}
 footer {
   grid-area:footer;
     background:#849ACD;
@@ -191,8 +190,11 @@ figure {
   grid-area:img5;
 }
 #review {
-  background-color:#729a30;
+  background-color:#7EAB36;
   margin-bottom:.5em;
+}
+#revtext {
+  color:#000000;
 }
 figure img {
   transition: all .5s ease-in-out;
@@ -200,6 +202,7 @@ figure img {
 figure img:hover {
   transform: scale(1.1);
 }
+
 /*----------Mobile Layout----------------------------*/
 .container1 { /*for later*/
   display:grid;
