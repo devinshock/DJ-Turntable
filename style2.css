@@ -63,9 +63,11 @@ grid-area:headerpic;
 }
 nav {
     grid-area:nav;
-    background:#226324;
-    background:#729a30;
+    background:#3F551B;
     padding:1em;
+}
+nav a {
+  color:white;
 }
 main {
     grid-area:main;
