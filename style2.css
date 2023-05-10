@@ -80,6 +80,9 @@ main {
     padding:1% 2%;
     font-size:1em;
 }
+main a {
+  color:#9E9EFF;
+}
 main h1 {
   color:#729a30;
 }
